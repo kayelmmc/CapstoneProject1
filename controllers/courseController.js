@@ -33,35 +33,6 @@ module.exports.addCourse = (reqBody) => {
 	})
 }
 
-//Create a New Course - Solution 2
-// module.exports.addCourse = (reqBody, userData) => {
-
-//     return User.findById(userData.userId).then(result => {
-
-//         if (userData.isAdmin == false) {
-//             return false
-//         } else {
-//             let newCourse = new Course({
-//                 name: reqBody.name,
-//                 description: reqBody.description,
-//                 price: reqBody.price
-//             })
-        
-//             //Saves the created object to the database
-//             return newCourse.save().then((course, error) => {
-//                 //Course creation failed
-//                 if(error) {
-//                     return false
-//                 } else {
-//                     //course creation successful
-//                     return "Course creation successful"
-//                 }
-//             })
-//         }
-        
-//     });    
-// }
-
 
 
 

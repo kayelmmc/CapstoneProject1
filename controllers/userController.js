@@ -20,11 +20,6 @@ module.exports.checkEmailExists = (reqBody) => {
 
 
 
-
-
-
-
-
 //Controller for User Registration
 module.exports.registerUser = (reqBody) => {
 
@@ -50,10 +45,6 @@ module.exports.registerUser = (reqBody) => {
 
 	})
 }
-
-
-
-
 
 
 
@@ -113,9 +104,6 @@ module.exports.getProfile = (data) => {
 	});
 
 };
-
-
-
 
 
 

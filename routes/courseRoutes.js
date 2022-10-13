@@ -19,8 +19,6 @@ router.post("/", auth.verify, (req, res) => {
 });
 
 
-
-
 //Route for retrieving all the courses
 router.get("/all", (req, res) => {
 
