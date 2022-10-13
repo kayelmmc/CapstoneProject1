@@ -151,41 +151,6 @@ module.exports.updateCourse = (reqParams, reqBody, data) => {
 
 
 
-
-// Session 40 - Activity - Solution
-// Archive A Course
-// module.exports.archiveCourse = (data) => {
-
-// 	return Course.findById(data.courseId).then((result, err) => {
-
-// 		if(data.payload === true) {
-
-// 			result.isActive = false;
-
-// 			return result.save().then((archivedCourse, err) => {
-
-// 				// Course not archived
-// 				if(err) {
-
-// 					return false;
-
-// 				// Course archived successfully
-// 				} else {
-
-// 					return true;
-// 				}
-// 			})
-
-// 		} else {
-
-// 			//If user is not Admin
-// 			return false
-// 		}
-
-// 	})
-// }
-
-
 module.exports.archiveCourse = (data, reqBody) => {
 
 	return Course.findById(data.courseId).then(result => {

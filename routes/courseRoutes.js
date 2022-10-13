@@ -18,13 +18,6 @@ router.post("/", auth.verify, (req, res) => {
 
 });
 
-//Route for creating a course - Solution 2
-// router.post("/", auth.verify, (req, res) => {
-
-//     const userData = auth.decode(req.headers.authorization)
-
-//     courseController.addCourse(req.body, {userId: userData.id, isAdmin:userData.isAdmin}).then(resultFromController => res.send(resultFromController))
-// })
 
 
 
@@ -71,19 +64,6 @@ router.put("/:courseId", auth.verify, (req, res) => {
 });
 
 
-
-// Session 40 - Activity - Solution
-// Route to archiving a course
-// A "PUT" request is used instead of "DELETE" request because of our approach in archiving and hiding the courses from our users by "soft deleting" records instead of "hard deleting" records which removes them permanently from our databases
-// router.put('/:courseId/archive', auth.verify, (req, res) => {
-
-// 	const data = {
-// 		courseId : req.params.courseId,
-// 		payload : auth.decode(req.headers.authorization).isAdmin
-// 	}
-
-// 	courseController.archiveCourse(data).then(resultFromController => res.send(resultFromController))
-// });
 
 
 
